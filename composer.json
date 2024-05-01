@@ -1,0 +1,15 @@
+{
+  "name": "literati/example",
+  "type": "wordpress-plugin",
+  "require-dev": {
+    "10up/wp_mock": "^1.0.0"
+  },
+  "require": {
+    "php": "^8.0"
+  },
+  "scripts": {
+    "test": "composer test:unit",
+    "test:unit": "phpunit -c phpunit.xml",
+    "fixes": "phpcbf php/ && phpcbf tests/"
+  }
+}
